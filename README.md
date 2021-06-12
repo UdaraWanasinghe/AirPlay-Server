@@ -10,17 +10,15 @@ Features:
 
 Building:
 
-1. sudo apt-get install cmake
-2. sudo apt-get install libssl-dev libavahi-compat-libdnssd-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
-   gstreamer1.0-libav
-3. sudo apt-get install gstreamer1.0-vaapi (For Intel graphics)
-4. mkdir build
-5. cd build
-6. cmake ..
-7. make
+1. `sudo apt-get install cmake`
+2. `sudo apt-get install libssl-dev libavahi-compat-libdnssd-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-libav`
+3. `sudo apt-get install gstreamer1.0-vaapi` (For Intel graphics)
+4. `mkdir build`
+5. `cd build`
+6. `cmake ..`
+7. `make`
 
 Note:
 
-* Uninstall gstreamer1.0-vaapi if you get segmentation fault error
-
-```sudo apt-get remove --purge gstreamer1.0-vaapi```
+* Uninstall gstreamer1.0-vaapi if you get segmentation fault error (Even on Intel graphics).
+  ```sudo apt-get remove --purge gstreamer1.0-vaapi```
